@@ -96,8 +96,8 @@ void postorder(struct node *root)
     }
 
     // recursive case
-    inorder(root->left);
-    inorder(root->right);
+    postorder(root->left);
+    postorder(root->right);
     printf("%d ", root->data);
 }
 
